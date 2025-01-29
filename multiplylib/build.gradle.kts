@@ -46,7 +46,7 @@ publishing {
         create<MavenPublication>("release") {
             groupId = "com.github.ganpatmalekar" // Your GitHub username
             artifactId = "NemMultiplySdk" // Your repository name
-            version = "1.0.6"  // Set a proper version, not "unspecified"
+            version = "1.0.7"  // Set a proper version, not "unspecified"
 
             afterEvaluate {
                 from(components["release"]) // Ensure "release" component exists
