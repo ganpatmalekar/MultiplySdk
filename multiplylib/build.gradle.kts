@@ -31,6 +31,32 @@ android {
     kotlinOptions {
         jvmTarget = "17"
     }
+
+    // Required for JitPack to recognize the "release" component
+    publishing {
+        singleVariant("release") {
+            withSourcesJar()
+            withJavadocJar()
+        }
+    }
+}
+
+publishing {
+    publications {
+        create<MavenPublication>("release") {
+            groupId = "com.github.ganpatmalekar" // Your GitHub username
+            artifactId = "NemMultiplySdk" // Your repository name
+            version = "1.0.6"  // Set a proper version, not "unspecified"
+
+            afterEvaluate {
+                from(components["release"]) // Ensure "release" component exists
+            }
+
+            pom {
+                description.set("A sample multiply SDK") // Short description
+            }
+        }
+    }
 }
 
 dependencies {
