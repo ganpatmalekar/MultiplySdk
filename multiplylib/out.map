@@ -1,0 +1,15 @@
+# compiler: R8
+# compiler_version: 8.1.68
+# common_typos_disable
+# {"id":"com.android.tools.r8.mapping","version":"2.2"}
+# pg_map_id: cceee63
+# pg_map_hash: SHA-256 cceee63a15a1c51f38234fcc7c9b89fbf9b2b44ff9616e70ad7cdf75ac0cb879
+com.gsm.multiplylib.MultiplyActivity -> com.gsm.multiplylib.MultiplyActivity:
+# {"id":"sourceFile","fileName":"MultiplyActivity.kt"}
+    1:1:void <init>():9:9 -> <init>
+    1:10:void onCreate$lambda$1(android.widget.EditText,android.widget.EditText,com.gsm.multiplylib.MultiplyActivity,android.view.View):19:28 -> a
+    1:8:void onCreate(android.os.Bundle):11:18 -> onCreate
+com.gsm.multiplylib.MultiplyUtility -> com.gsm.multiplylib.MultiplyUtility:
+# {"id":"sourceFile","fileName":"MultiplyUtility.kt"}
+    1:1:void <init>():6:6 -> <init>
+    1:1:android.content.Intent getMultiplicationIntent(android.content.Context):8:8 -> getMultiplicationIntent

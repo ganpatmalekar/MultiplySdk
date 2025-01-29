@@ -5,4 +5,4 @@ before_install:
   - ./scripts/prepareJitpackEnvironment.sh
 install:
   - FILE="-Dfile=multiplylib-release.aar"
-  - mvn install:install-file $FILE -DgroupId=com.github.ganpatmalekar -DartifactId=MultiplySdk -Dversion=1.0.9 -Dpackaging=aar -DgeneratePom=true
+  - mvn install:install-file $FILE -DgroupId=com.github.ganpatmalekar -DartifactId=MultiplySdk -Dversion=1.0.10 -Dpackaging=aar -DgeneratePom=true
